@@ -4,7 +4,7 @@ const db = require('../models/index');
 const User = db.user;
 
 verifyToken = (req, res, next) => {
-  let token = req.headers['x-access-token'];
+  let token = req.headers["x-access-token"];
   
   // check if token exist
   if(!token){
